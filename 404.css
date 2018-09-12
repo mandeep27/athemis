@@ -1,0 +1,219 @@
+@-webkit-keyframes flicker{0%{opacity:0.01;}25%{opacity:0.01;}25.01% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 1;
+  }
+  26.01% {
+    opacity: 0.01;
+  }
+  50% {
+    opacity: 0.01;
+  }
+  50.01% {
+    opacity: 1;
+  }
+  58% {
+    opacity: 1;
+  }
+  58.01% {
+    opacity: 0.01;
+  }
+  70% {
+    opacity: 0.01;
+  }
+  70.01% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 1;
+  }
+  72.01% {
+    opacity: 0.01;
+  }
+  75% {
+    opacity: 0.01;
+  }
+  75.01% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  80.01% {
+    opacity: 0.01;
+  }
+  90% {
+    opacity: 0.01;
+  }
+  90.01% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  95.01% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 0.01;
+  }
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.01;
+  }
+  25% {
+    opacity: 0.01;
+  }
+  25.01% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 1;
+  }
+  26.01% {
+    opacity: 0.01;
+  }
+  50% {
+    opacity: 0.01;
+  }
+  50.01% {
+    opacity: 1;
+  }
+  58% {
+    opacity: 1;
+  }
+  58.01% {
+    opacity: 0.01;
+  }
+  70% {
+    opacity: 0.01;
+  }
+  70.01% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 1;
+  }
+  72.01% {
+    opacity: 0.01;
+  }
+  75% {
+    opacity: 0.01;
+  }
+  75.01% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  80.01% {
+    opacity: 0.01;
+  }
+  90% {
+    opacity: 0.01;
+  }
+  90.01% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  95.01% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 0.01;
+  }
+}
+/* Detail - Super specific to override inherit client styles */
+body.error,
+body.error #container,
+body.error #page,
+body.error .section,
+#page #container {
+  position: static;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+      -ms-transform: translate(0,0);
+          transform: translate(0,0);
+}
+.section-error {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.section-error .wrap {
+  max-width: 100%;
+  padding: 0;
+}
+.section-error-header {
+  display: none;
+}
+.section-error .figure {
+  position: relative;
+  padding-bottom: 59%;
+  margin: 0;
+}
+.section-error .figure .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("//static.wonderfulunion.net/groundctrl/clients/wonderful-union/error/error1.png") no-repeat center/contain;
+}
+.section-error .figure .image:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background: url("//static.wonderfulunion.net/groundctrl/clients/wonderful-union/error/error2.jpg") no-repeat center/contain; */
+  opacity: 0.01;
+  -webkit-animation-name: flicker;
+  animation-name: flicker;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.section-error .content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2em 10px 4em;
+}
+.section-error p, .section-error a {
+  margin: 0;
+  padding: 0;
+  color: #ec1c24;
+  font-size: 23px !important;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+.section-error a, #page a {
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: color 250ms;
+          transition: color 250ms;
+}
+.section-error a:hover, #page a:hover {
+  color: #808080;
+  opacity: 1;
+  -webkit-animation: none;
+          animation: none;
+}

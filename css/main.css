@@ -1,0 +1,1093 @@
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+
+* {
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    font: 14px/1.5 "Galaxie";
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%
+}
+
+@media (min-width: 0) and (max-width: 656px) {
+    body {
+        font-size: 18px
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+a:hover {
+    color: #ec008c
+}
+
+ul.blocks {
+    padding-bottom: 100px
+}
+
+ul.blocks>li {
+    text-align: center;
+    min-height: 140px;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 16px
+}
+
+ul.blocks>li:before {
+    content: '';
+    width: 92px;
+    height: 2px;
+    display: inline-block;
+    background: #dadada;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -46px
+}
+
+ul.blocks.half>li {
+    width: 50%;
+    float: left
+}
+
+ul.blocks.half>li:nth-child(odd) {
+    clear: left
+}
+
+.block {
+    padding: 40px;
+    display: block;
+    cursor: pointer
+}
+
+.block span {
+    color: #999
+}
+
+.block:hover {
+    background: #ec008c !important;
+    color: #fff
+}
+
+.block:hover span,
+.block:hover b,
+.block:hover p,
+.block:hover h4,
+.block:hover .tile.text time,
+.tile.text .block:hover time {
+    color: #fff !important
+}
+
+h1 {
+    font-family: "HUGEAvantGardeBold", sans-serif;
+    font-size: 78px;
+    font-weight: normal;
+    line-height: 1.1;
+    letter-spacing: -0.06em;
+    margin-bottom: 0.2em
+}
+
+h2 {
+    font-family: "HUGEAvantGardeBold", sans-serif;
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+    font-weight: normal;
+    margin-bottom: 0.7em
+}
+
+h2.typed {
+    font-size: 42px;
+    color: #000
+}
+
+h3 {
+    font-family: "HUGEAvantGardeBold", sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+    margin-bottom: 1em
+}
+
+h3.typed,
+.detail main figcaption {
+    font-size: 22px
+}
+
+@media (min-width: 0) and (max-width: 656px) {
+    h3.typed,
+    .detail main figcaption {
+        font-size: 28px
+    }
+}
+
+h4,
+.tile.text time {
+    font-family: "HUGEAvantGardeBold", sans-serif;
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+    font-weight: normal
+}
+
+h5 {
+    font-family: "HUGEAvantGardeBold", sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.06em;
+    font-weight: normal;
+    margin-bottom: 0.5em
+}
+
+@media (min-width: 0) and (max-width: 656px) {
+    h5 {
+        font-size: 22px
+    }
+}
+
+h6 {
+    font-family: "HUGEAvantGardeBold", sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.06em;
+    font-weight: normal
+}
+
+.typed,
+.thankyoupage #thankyou.stranger main section.login-box h4,
+.thankyoupage #thankyou.stranger main section.login-box .tile.text time,
+.tile.text .thankyoupage #thankyou.stranger main section.login-box time,
+.hellopage #hello.stranger section.login-box h4,
+.hellopage #hello.stranger section.login-box .tile.text time,
+.tile.text .hellopage #hello.stranger section.login-box time {
+    font-family: "Galaxie";
+    line-height: 1.4;
+    letter-spacing: -0.06em;
+    color: #999;
+    text-align: center
+}
+
+strong {
+    font-weight: bold
+}
+
+em {
+    font-family: "GalaxieItalic";
+    font-style: italic
+}
+
+code {
+    font-family: "Courier New", monospace;
+    background: #fff
+}
+
+p {
+    margin-bottom: 1em
+}
+
+q {
+    font: 38px/1.2 "HUGEAvantGardeBold", sans-serif;
+    letter-spacing: -0.06em;
+    display: inline-block;
+    margin: 54px
+}
+
+@media (min-width: 1297px) {
+    q {
+        float: right;
+        width: 55%;
+        margin-right: -25%
+    }
+}
+
+input,
+.jobpage textarea {
+    height: 70px;
+    font: 15px/30px Arial, sans-serif;
+    color: #fafafa;
+    background: #000;
+    border: 0;
+    padding: 20px
+}
+
+button {
+    border: 0
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none !important;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    -moz-transition: background-color 0.3s, opacity 0.3s;
+    -o-transition: background-color 0.3s, opacity 0.3s;
+    -webkit-transition: background-color 0.3s, opacity 0.3s;
+    transition: background-color 0.3s, opacity 0.3s
+}
+
+.button:hover {
+    background-color: #ec008c !important;
+    color: #fff
+}
+
+.button.black {
+    background: #000;
+    width: 160px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 13px
+}
+
+@media (min-width: 0) and (max-width: 656px) {
+    .button.black {
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        font-size: 24px
+    }
+}
+
+@media (min-width: 657px) and (max-width: 977px) {
+    .button.black {
+        width: 260px
+    }
+}
+
+.button.grey-border {
+    color: #000;
+    height: 54px;
+    line-height: 48px;
+    border: 3px #cccccc solid;
+    width: 210px
+}
+
+.button.grey-border:hover {
+    background-color: inherit !important;
+    border-color: #ec008c
+}
+
+.button.white {
+    -moz-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    -webkit-transition: border 0.3s;
+    transition: border 0.3s;
+    background: #fff;
+    border: 2px #efefef solid;
+    color: #000;
+    height: 54px;
+    width: 160px;
+    line-height: 54px;
+    font-size: 13px
+}
+
+.button.white:hover {
+    background-color: inherit !important;
+    border: 2px #ec008c solid
+}
+
+@media (min-width: 0) and (max-width: 656px) {
+    .button.white {
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        font-size: 24px
+    }
+}
+
+@media (min-width: 657px) and (max-width: 977px) {
+    .button.white {
+        width: 260px
+    }
+}
+
+.button.play {
+    width: 80px;
+    height: 80px;
+    background: rgba(236, 0, 140, 0.8) url("/content/images/work/play-icon.png") 50% 50% no-repeat
+}
+
+.button.link {
+    height: 70px;
+    line-height: 70px;
+    width: 146px;
+    background-color: #262626
+}
+
+.button.link span {
+    background: url("/content/images/util/icon-link.png") top left no-repeat;
+    height: 10px;
+    line-height: 10px;
+    padding-left: 30px;
+    display: inline-block;
+    vertical-align: top
+}
+
+.button.load {
+    -moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    -o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all
+}
+
+.button.load.loading {
+    color: transparent;
+    background: #232525 url("/content/images/util/loader.gif") 50% 50% no-repeat !important
+}
+
+.social {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin: 10px 0 5px;
+    background-color: #232525;
+    background-size: 100% 100%;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s
+}
+
+.social.facebook {
+    background-image: url("/content/images/util/facebook.png")
+}
+
+.social.twitter {
+    background-image: url("/content/images/util/twitter.png")
+}
+
+.social.linkedin {
+    background-image: url("/content/images/util/linkedin.png")
+}
+
+.social.gplus {
+    background-image: url("/content/images/util/gplus.png")
+}
+
+.social.pinterest {
+    background-image: url("/content/images/util/pinterest.png")
+}
+
+.social.instagram {
+    background-image: url("/content/images/util/instagram.png")
+}
+
+.social.email {
+    background-image: url("/content/images/util/email.png")
+}
+
+.social:hover {
+    background-color: #ec008c
+}
+
+.right {
+    float: right
+}
+
+.left {
+    float: left
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.eyebrow {
+    font: 13px Arial, sans-serif
+}
+
+.eyebrow a,
+.eyebrow b {
+    color: #ec008c;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+p.caption {
+    text-align: center;
+    font: 26px "Galaxie"
+}
+
+li p.caption {
+    margin: 1em 0 0
+}
+
+.arrow-down {
+    padding-bottom: 54px
+}
+
+.arrow-down:after {
+    content: '↓';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-family: Heiti, 'Lucida Grande' !important;
+    font-size: 36px
+}
+
+main.arrow-down {
+    padding-top: 92px;
+    padding-bottom: inherit
+}
+
+main.arrow-down:after {
+    bottom: auto;
+    top: 0;
+    color: #fff;
+    -moz-transition: color 0.2s ease-in 0.4s;
+    -o-transition: color 0.2s ease-in 0.4s;
+    -webkit-transition: color 0.2s ease-in 0.4s;
+    transition: color 0.2s ease-in 0.4s
+}
+
+main.arrow-down.scroll:after {
+    color: #000
+}
+
+.arrow {
+    font-family: Heiti, 'Lucida Grande' !important;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.gutter {
+    padding: 0 40px
+}
+
+.center {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+
+.center span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 40px;
+    color: #fff;
+    line-height: 1.2
+}
+
+header .v-center {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+
+header .v-center>div {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.video+h1 span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 100%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+video {
+    width: 100%;
+    height: auto;
+    min-height: 270px;
+    display: block
+}
+
+video::-webkit-media-controls {
+    display: none !important
+}
+
+.video {
+    overflow: hidden
+}
+
+.video .popout {
+    height: 100%
+}
+
+.video .popout>div {
+    background-size: cover
+}
+
+.video .play {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.video+h1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    background: url("/content/images/util/pixel.png")
+}
+
+.touch-device video {
+    min-height: 80px !important;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    position: absolute
+}
+
+.touch-device .video .popout>div {
+    width: 100%;
+    height: 100%
+}
+
+.touch-device .play.button {
+    background-color: #ec008c
+}
+
+.touch-device body.detail .video {
+    background-size: cover
+}
+
+.touch-device body.detail video {
+    margin-left: 240px
+}
+
+video:-webkit-full-screen {
+    top: 0;
+    left: 0
+}
+
+body:not(.touch-device) .video .popout>div {
+    background: none !important
+}
+
+.ie-poster {
+    display: none;
+    height: 100%;
+    left: 0;
+    min-height: 270px;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.ie8 .ie-poster,
+.ie9 .ie-poster {
+    display: block
+}
+
+.controls {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    bottom: 0;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out
+}
+
+.controls .inner>div {
+    position: absolute;
+    height: 25px;
+    top: 5px
+}
+
+.controls .plause {
+    left: 5px;
+    width: 25px;
+    cursor: pointer
+}
+
+.controls .plause span {
+    display: block;
+    width: 8px;
+    height: 9px;
+    margin: 8px auto;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #fff
+}
+
+.controls .progress {
+    left: 40px;
+    right: 80px
+}
+
+.controls .progress div {
+    position: absolute;
+    width: 0;
+    height: 9px;
+    left: 0;
+    margin: 8px 0
+}
+
+.controls .progress div.loaded {
+    opacity: 0.8;
+    background-color: #f73d9e
+}
+
+.controls .progress div.played {
+    background: #fff
+}
+
+.controls .time {
+    width: 75px;
+    right: 5px;
+    font: 10px/25px "HUGEAvantGardeBold", sans-serif;
+    color: #fff;
+    text-align: center
+}
+
+.video.playing video+.controls,
+.video.playing video+.ie-poster+.controls,
+.video.playing .controls {
+    opacity: 1;
+    visibility: visible;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out
+}
+
+.video.playing .controls .plause span {
+    border-top: 0px;
+    border-right: 3px solid #fff;
+    border-bottom: 0px;
+    border-left: 3px solid #fff
+}
+
+@media (min-width: 657px) and (max-width: 977px) {
+    #offices .container {
+        border: 0;
+        width: 636px;
+        text-align: center
+    }
+}
+
+@media (min-width: 977px) and (max-width: 1296px) {
+    #offices .container {
+        width: 952px;
+        text-align: center
+    }
+}
+
+@media (min-width: 1297px) {
+    #offices .container {
+        width: 952px;
+        text-align: center
+    }
+}
+
+@font-face {
+    font-family: 'HUGEAvantGardeBold';
+    src: url("fonts/huge_agb_v5-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/huge_agb_v5-webfont.woff") format("woff"), url("fonts/huge_agb_v5-webfont.ttf") format("truetype"), url("fonts/huge_agb_v5-webfont.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: 'Galaxie';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/GalaxieCopernicus-Book.eot?#iefix") format("embedded-opentype"), url("fonts/GalaxieCopernicus-Book.woff") format("woff"), url("fonts/GalaxieCopernicus-Book.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: 'GalaxieItalic';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/GalaxieCopernicus-BookItalic.eot?#iefix") format("embedded-opentype"), url("fonts/GalaxieCopernicus-BookItalic.woff") format("woff"), url("fonts/GalaxieCopernicus-BookItalic.svg#svgFontName") format("svg")
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+html {
+    position: static;
+    width: 100%;
+    height: 100%
+}
+
+body {
+    min-width: 640px
+}
+
+.container {
+    margin: 0 auto;
+    width: 640px
+}
+
+@media (min-width: 0) and (max-width: 656px) {
+    .container {
+        width: 640px
+    }
+}
+
+@media (min-width: 657px) and (max-width: 977px) {
+    .container {
+        width: 640px
+    }
+}
+
+@media (min-width: 977px) and (max-width: 1296px) {
+    .container {
+        width: 960px
+    }
+}
+
+@media (min-width: 1297px) {
+    .container {
+        width: 1280px
+    }
+}
+
+main {
+    display: block
+}
+
+#top-overlap {
+    margin-top: -320px;
+    -moz-transition: margin-top 1s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: margin-top 1s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: margin-top 1s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: margin-top 1s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+#top-overlap.scroll {
+    margin-top: 0
+}
+
+@media (min-width: 0) and (max-width: 656px) {
+    #top-overlap {
+        margin-top: -200px
+    }
+}
+
+@media (min-width: 657px) and (max-width: 977px) {
+    #top-overlap {
+        margin-top: -240px
+    }
+}
+
+header+h2 {
+    color: #000;
+    margin: 0;
+    padding-top: 84px
+}
+
+.main-section {
+    padding: 80px 0
+}
+
+body nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    height: 80px;
+    font: 60px "Galaxie";
+    color: #fff;
+    padding-top: 0px;
+    background: none;
+    z-index: 1000;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body nav .bar {
+    z-index: 2000;
+    margin-top: 0px;
+    width: 100%;
+    height: 100px;
+    background: none;
+    -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body nav .nav-background {
+    z-index: 1500;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: table;
+    -moz-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body nav #logo {
+    width: 144px;
+    height: 74px;
+    padding: 58px 40px;
+    z-index: 1000;
+    background-image: url("/content/images/util/logo.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body nav #toggle {
+    width: 104px;
+    height: 74px;
+    padding: 45px 40px;
+    z-index: 1000;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body nav #toggle .patty {
+    width: 24px;
+    height: 4px;
+    margin: 10px 0;
+    background: #ec008c;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+body nav #toggle .patty:after,
+body nav #toggle .patty:before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 4px;
+    background: #ec008c;
+    position: absolute;
+    z-index: -1;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+body nav #toggle .patty:before {
+    top: -8px
+}
+
+body nav #toggle .patty:after {
+    top: 8px
+}
+
+body nav #toggle:hover {
+    -moz-transition: top 0.4s;
+    -o-transition: top 0.4s;
+    -webkit-transition: top 0.4s;
+    transition: top 0.4s
+}
+
+body nav #toggle:hover .patty:before {
+    top: -9px
+}
+
+body nav #toggle:hover .patty:after {
+    top: 9px
+}
+
+body nav ul {
+    visibility: hidden;
+    top: -10%;
+    width: 100%;
+    padding: 0;
+    opacity: 0;
+    display: table-cell;
+    vertical-align: middle;
+    -moz-transform: perspective(600px) rotateX(10deg);
+    -webkit-transform: perspective(600px) rotateX(10deg);
+    transform: perspective(600px) rotateX(10deg);
+    -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+    -o-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+    -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63)
+}
+
+body nav li {
+    list-style: none;
+    text-align: center
+}
+
+body nav li a {
+    padding: 8px 0 0;
+    width: 100%;
+    display: block;
+    display: block;
+    letter-spacing: -0.06em
+}
+
+body nav li a:hover {
+    background: #fff
+}
+
+body nav li a:focus {
+    outline: 0
+}
+
+body>nav.solid .bar {
+    margin-top: -20px;
+    background-color: #ec008c;
+    background-color: rgba(217, 40, 130, 0.9)
+}
+
+body>nav.solid #logo {
+    background-image: url("/content/images/util/logo_white.png")
+}
+
+body>nav.solid #toggle .patty {
+    background: #fff
+}
+
+body>nav.solid #toggle .patty:before {
+    background: #fff
+}
+
+body>nav.solid #toggle .patty:after {
+    background: #fff
+}
+
+body>nav.open {
+    -moz-transition: none;
+    -o-transition: none;
+    -webkit-transition: none;
+    transition: none;
+    height: 100%
+}
+
+body>nav.open .bar {
+    margin-top: 0px;
+    background: none
+}
+
+body>nav.open #logo {
+    background-image: url("/content/images/util/logo_white.png") !important
+}
+
+body>nav.open .patty {
+    background: none !important
+}
+
+body>nav.open .patty:after {
+    top: 0 !important;
+    background: #fff !important;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+body>nav.open .patty:before {
+    top: 0 !important;
+    background: #fff !important;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+body>nav.open .nav-background {
+    background-color: #ec008c !important;
+    background-color: rgba(217, 40, 130, 0.9) !important
+}
+
+body>nav.open ul {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    -moz-transform: perspective(600px) rotateX(0deg);
+    -webkit-transform: perspective(600px) rotateX(0deg);
+    transform: perspective(600px) rotateX(0deg)
+}
+
+body>nav.closing {
+    height: 100%
+}
+
+body>nav.closing ul {
+    top: 10%;
+    visibility: visible;
+    opacity: 0;
+    -moz-transform: perspective(600px) rotateX(-10deg);
+    -webkit-transform: perspective(600px) rotateX(-10deg);
+    transform: perspective(600px) rotateX(-10deg);
+    -moz-transition: all 0.5s cubic-bezier(0.63, 0.64, 0.3, 1);
+    -o-transition: all 0.5s cubic-bezier(0.63, 0.64, 0.3, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.63, 0.64, 0.3, 1);
+    transition: all 0.5s cubic-bezier(0.63, 0.64, 0.3, 1)
+}
+
+body>nav.hide-it {
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    -webkit-transition: all 0s;
+    transition: all 0s;
+    display: none
+}
